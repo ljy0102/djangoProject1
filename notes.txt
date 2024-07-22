@@ -102,3 +102,14 @@ django/conf/global_settings.py
         git config              ->进行配置
         git add . 或者 文件      ->添加到缓存区
         git commit -m ""        ->添加到本地村粗，并设置提交信息
+
+
+    git remote add origin 你的仓库地址(可以是开源的仓库或者你公司的仓库)
+    查看有哪些remote:git remote
+    查看remote的详情:git remoteshow origin
+
+    为了在提交时不需要输入密码，需要进行如下配置:
+    生成公私钥对:ssh-keygen.exe
+    查看并复制公钥:cat~/.ssh/id_rsa.pub
+    将公钥复制粘贴到github的Settings->SSH and GPG key
+    将本地的记录推送到远程仓库:git push -u origin --all
